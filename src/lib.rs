@@ -11,6 +11,9 @@ pub mod sigmaresourcemanager;
 
 /// System resource manager module.
 pub mod sigmaresource;
+
+/// Control groups (cgroups v2) resource control.
+pub mod sigmacgroup;
 #[derive(Debug, thiserror::Error)]
 pub enum ComponentError {
     /// The requested operation is not supported by this component yet.
