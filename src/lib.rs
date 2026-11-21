@@ -8,6 +8,9 @@
 
 /// Errors raised by this component.
 pub mod sigmaresourcemanager;
+
+/// System resource manager module.
+pub mod sigmaresource;
 #[derive(Debug, thiserror::Error)]
 pub enum ComponentError {
     /// The requested operation is not supported by this component yet.
